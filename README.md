@@ -1,8 +1,9 @@
-Project Overview
+#Project Overview
 
 This project is an implementation inspired by the strategy employed by the Silver Medal-winning team in a previous competition. The competition focused on H&M Personalized Fashion Recommendations on Kaggle, and the goal was to predict the items each customer would purchase in the 7 days following the training data period.
 
-Data Description
+#Data Description
+
 Official Data Page: [H&M Personalized Fashion Recommendations | Kaggle](link_to_kaggle)
 
 The dataset includes transaction data, customer metadata, and item metadata (including item descriptions, text, and images).
@@ -13,15 +14,16 @@ The dataset includes transaction data, customer metadata, and item metadata (inc
 - `sample_submission.csv`: Sample submission file in the correct format.
 - `transactions_train.csv`: Training data including customer purchases on each date, along with other information. Duplicate rows correspond to multiple purchases of the same item.
 
-Approach
+#Approach
 
 The project adopted a strategy similar to that of the Silver Medal-winning team. The machine configuration included a GPU (NVIDIA 3090), CPU (Intel i9-10900k), 128GB RAM, and an Ubuntu 18.04 operating system.
 
-Solution Strategy
+#Solution Strategy
 
 The project primarily utilized the tabular data part of the dataset and excluded image and text data.
 The chosen model for this project was Catboost.
-Key Strategies
+
+Key Strategies:
 
 Data Preprocessing Optimization: To enhance efficiency, all tabular data was initially converted to pickle format, reducing data loading time significantly.
 Feature Engineering: The team focused on constructing meaningful features through a four-step process:
